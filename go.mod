@@ -14,11 +14,17 @@ require (
 
 require (
 	github.com/beorn7/perks v1.0.1 // indirect
+	github.com/buger/goterm v1.0.4 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
+	github.com/diskfs/go-diskfs v1.2.0 // indirect
 	github.com/go-stack/stack v1.8.0 // indirect
 	github.com/go-task/slim-sprig v0.0.0-20230315185526-52ccab3ef572 // indirect
 	github.com/google/pprof v0.0.0-20210407192527-94a9f03dee38 // indirect
+	github.com/gorilla/websocket v1.4.2 // indirect
+	github.com/jinzhu/copier v0.3.4 // indirect
 	github.com/kr/text v0.2.0 // indirect
+	github.com/luthermonson/go-proxmox v0.0.0-beta2 // indirect
+	github.com/magefile/mage v1.14.0 // indirect
 	github.com/mattn/go-colorable v0.1.7 // indirect
 	github.com/mattn/go-isatty v0.0.19 // indirect
 	github.com/matttproud/golang_protobuf_extensions/v2 v2.0.0 // indirect
@@ -38,6 +44,7 @@ require (
 	golang.org/x/text v0.14.0 // indirect
 	golang.org/x/tools v0.13.0 // indirect
 	google.golang.org/protobuf v1.31.0 // indirect
+	gopkg.in/djherbis/times.v1 v1.2.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 

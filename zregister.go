@@ -17,12 +17,14 @@ import (
 	"github.com/semihalev/sdns/middleware/hostsfile"
 	"github.com/semihalev/sdns/middleware/loop"
 	"github.com/semihalev/sdns/middleware/metrics"
+	"github.com/semihalev/sdns/middleware/pveresolver"
 	"github.com/semihalev/sdns/middleware/ratelimit"
 	"github.com/semihalev/sdns/middleware/recovery"
 	"github.com/semihalev/sdns/middleware/resolver"
 )
 
 func init() {
+	middleware.Register("pveresolver", func(cfg *config.Config) middleware.Handler { return pveresolver.New(cfg) })
 	middleware.Register("recovery", func(cfg *config.Config) middleware.Handler { return recovery.New(cfg) })
 	middleware.Register("loop", func(cfg *config.Config) middleware.Handler { return loop.New(cfg) })
 	middleware.Register("metrics", func(cfg *config.Config) middleware.Handler { return metrics.New(cfg) })

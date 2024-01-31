@@ -61,12 +61,22 @@ type Config struct {
 	QnameMinLevel    int `toml:"qname_min_level"`
 	EmptyZones       []string
 
+	PVEResolver PVEResolver `toml:"pveresolver"`
+
 	Plugins map[string]Plugin
 
 	CookieSecret string
 	IPv6Access   bool
 
 	sVersion string
+}
+
+type PVEResolver struct {
+	Enable   bool
+	Endpoint string
+	Token    string
+	Secret   string
+	Network  string
 }
 
 // Plugin type
@@ -281,6 +291,13 @@ qname_min_level = 5
 # ]
 emptyzones = [
 ]
+
+[pveresolver]
+	enable = false
+	endpoint = "https://127.0.0.1:8006/api2/json"
+	token = "pveresolver@pve!sdns"
+	secret = "00000000-0000-0000-0000-000000000000"
+	network = "10.0.0.0/8"
 
 # You can add your own plugins to sdns. The plugin order is very important. 
 # Plugins can be loaded before the cache middleware.

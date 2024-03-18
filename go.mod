@@ -3,9 +3,10 @@ module github.com/semihalev/sdns
 require (
 	github.com/BurntSushi/toml v1.3.2
 	github.com/cespare/xxhash/v2 v2.2.0
+	github.com/luthermonson/go-proxmox v0.0.0-beta2
 	github.com/miekg/dns v1.1.57
 	github.com/prometheus/client_golang v1.18.0
-	github.com/quic-go/quic-go v0.40.1
+	github.com/quic-go/quic-go v0.42.0
 	github.com/semihalev/log v0.1.1
 	github.com/stretchr/testify v1.8.4
 	github.com/yl2chen/cidranger v1.0.2
@@ -23,7 +24,6 @@ require (
 	github.com/gorilla/websocket v1.4.2 // indirect
 	github.com/jinzhu/copier v0.3.4 // indirect
 	github.com/kr/text v0.2.0 // indirect
-	github.com/luthermonson/go-proxmox v0.0.0-beta2 // indirect
 	github.com/magefile/mage v1.14.0 // indirect
 	github.com/mattn/go-colorable v0.1.7 // indirect
 	github.com/mattn/go-isatty v0.0.19 // indirect
@@ -34,8 +34,7 @@ require (
 	github.com/prometheus/common v0.45.0 // indirect
 	github.com/prometheus/procfs v0.12.0 // indirect
 	github.com/quic-go/qpack v0.4.0 // indirect
-	github.com/quic-go/qtls-go1-20 v0.4.1 // indirect
-	go.uber.org/mock v0.3.0 // indirect
+	go.uber.org/mock v0.4.0 // indirect
 	golang.org/x/crypto v0.17.0 // indirect
 	golang.org/x/exp v0.0.0-20221205204356-47842c84f3db // indirect
 	golang.org/x/mod v0.12.0 // indirect
